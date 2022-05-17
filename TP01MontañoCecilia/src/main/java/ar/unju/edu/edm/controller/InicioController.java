@@ -34,8 +34,8 @@ public String mostrarMenu() {
 
 	return "Punto1";
 }
-	@GetMapping ("/Bisciesto")
-	public String getBcsiestoPage(@RequestParam(name="num1")int num1, Model model) {
+	@GetMapping ("/Bisiesto")
+	public String getBisiestoPage(@RequestParam(name="num1")int num1, Model model) {
 	String resultadoB;
 	Bisiesto bisi=new Bisiesto();
 	bisi.setAnio(num1);
@@ -44,7 +44,7 @@ public String mostrarMenu() {
 	return "Punto2";
 }
 	 @GetMapping("/ParImpar")
-	  public String getparPage(@RequestParam (name = "numero") int numero,Model model){
+	  public String getParImparPage(@RequestParam (name = "numero") int numero,Model model){
 	    String[] Aux1= new String[5];
 	    Par_Impar par_impar = new Par_Impar();
 			for(int i=0;i<5;i++){
@@ -70,7 +70,7 @@ public String mostrarMenu() {
 	  }
 
 	  @GetMapping("/Mes2")
-	  public String getmes2Page(@RequestParam (name = "numero") int numero,Model model){
+	  public String getMes2Page(@RequestParam (name = "numero") int numero,Model model){
 	    String aux;
 	    Mes2 mes2 = new Mes2();
 	    mes2.setNumero(numero);
@@ -80,7 +80,7 @@ public String mostrarMenu() {
 	  }
 
 	  @GetMapping("/EvaluarValor")
-	  public String getnotaPage(@RequestParam (name = "numero") int numero,Model model){
+	  public String getEvaluarValorPage(@RequestParam (name = "numero") int numero,Model model){
 	    String[] Aux1= new String[8];
 	    EvaluarValor valor = new EvaluarValor();
 			for(int i=0;i<8;i++){
@@ -100,7 +100,7 @@ public String mostrarMenu() {
 	  }
 
 	  @GetMapping("/Secuencianum1")
-	  public String getSecuenciaPage(@RequestParam (name = "numero") int numero,Model model){
+	  public String getSecuenciaNum1Page(@RequestParam (name = "numero") int numero,Model model){
 	    String Aux;
 	    SecuenciaNum1 secu = new SecuenciaNum1();
 	    secu.setNumero(numero);
@@ -110,7 +110,7 @@ public String mostrarMenu() {
 	  }
 
 	  @GetMapping("/Secuencianum2")
-	  public String getsecu2Page(@RequestParam (name = "numero") int numero,Model model){
+	  public String getSecuenciaNum2Page(@RequestParam (name = "numero") int numero,Model model){
 	    String Aux;
 	    SecuenciaNum2 secu2 = new SecuenciaNum2();
 	    secu2.setNumero(numero);
@@ -120,7 +120,7 @@ public String mostrarMenu() {
 	  }
 
 	  @GetMapping("/Secuencianum3")
-	  public String getsecu3Page(@RequestParam (name = "numero") int numero,Model model){
+	  public String getSecuenciaNum3Page(@RequestParam (name = "numero") int numero,Model model){
 	    String Aux;
 	    SecuenciaNum3 secu3 = new SecuenciaNum3();
 	    secu3.setNumero(numero);
@@ -130,7 +130,7 @@ public String mostrarMenu() {
 	  }
 
 	  @GetMapping("/Secuencianum4")
-	  public String getsecu4Page(@RequestParam (name = "numero") int numero,Model model){
+	  public String getSecuenciaNum4Page(@RequestParam (name = "numero") int numero,Model model){
 	    String Aux;
 	    SecuenciaNum4 secu4 = new SecuenciaNum4();
 	    secu4.setNumero(numero);
@@ -140,7 +140,7 @@ public String mostrarMenu() {
 	  }
 
 	  @GetMapping("/Secuencianum5")
-	  public String getsecu5Page(@RequestParam (name = "numero") int numero, Model model){
+	  public String getSecuenciaNum5Page(@RequestParam (name = "numero") int numero, Model model){
 	    String Aux;
 	    SecuenciaNum5 secu5 = new SecuenciaNum5();
 	    secu5.setNumero(numero);
@@ -150,7 +150,7 @@ public String mostrarMenu() {
 	  }
 
 	  @GetMapping("/Tiempo")
-	  public String gettiempoPage(@RequestParam (name = "numero") int numero,Model model){
+	  public String getTiempoPage(@RequestParam (name = "numero") int numero,Model model){
 	    String aux;
 	    Tiempo time = new Tiempo();
 	    time.setNumero(numero);
